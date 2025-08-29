@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUY TÙNG COFFEE - ĐẶC SẢN PHÚ YÊN</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- link font chữ -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <!-- link icon -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- link css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/productdetail.css">
+  <link rel="stylesheet" href="./assets/css/reponsive1.css">
+  <link rel="icon" href="./assets/img/logo/image.png" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+</head>
+<style>
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+
+  form.example button:hover {
+    background: #0b7dda;
+  }
+
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+          /* Mobile & tablet  */
+@media (max-width: 1023px) {
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .owl-item {
+    width: 396px;
+    padding: 16px 0;
+  }
+}
+/* mobile */
+@media (max-width: 739px) {
+  .owl-item {
+    float: unset;
+    padding: 16px 0;
+  }
+} 
+</style>
+
+<body style="background-color: rgb(248, 242, 236);">
+  <div class="overlay hidden"></div>
+  <!-- mobile menu -->
+  <div class="mobile-main-menu">
+    <div class="drawer-header">
+      <a href="">
+        <div class="drawer-header--auth">
+        </div>
+      </a>
+    </div>
+    </ul>
+    <div class="la-scroll-fix-infor-user">
+      <div class="la-nav-menu-items">
+        <div class="la-title-nav-items">
+          <strong>Danh mục</strong>
+        </div>
+        <ul class="la-nav-list-items">
+          <li class="ng-scope">
+            <a href="./index.html">Trang chủ</a>
+          </li>
+          <li class="ng-scope">
+            <a href="./intro.html">Giới thiệu</a>
+          </li>
+          <li class="ng-scope">
+            <a href="./news.html">Tin tức</a>
+          </li>
+          <li class="ng-scope">
+            <a href="./contact.html">Liên hệ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="mobile-support">
+      <li>
+        <div class="drawer-text-support">Hỗ trợ</div>
+      </li>
+      <li>
+        <i class="fas fa-phone-square-alt footer__item-icon">HOTLINE: </i>
+        <a href="tel:0902077103">0902.077.103</a>
+      </li>
+      <li>
+        <i class="fas fa-envelope-square footer__item-icon">Email: </i>
+        <a href="mailto:support@sapo.vn">cafehuytung.com@gmail.com</a>
+      </li>
+    </ul>
+  </div>
+  <!-- end mobile menu -->
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="top-link clearfix hidden-sm hidden-xs">
+        <div class="row">
+          <div class="col-6 social_link">
+            <div class="social-title">Theo dõi: </div>
+            <a href="https://www.facebook.com/profile.php?id=100083166708720"><i class="fab fa-facebook" style="font-size: 24px; margin-right: 10px"></i></a>
+            <a href="https://www.youtube.com/watch?v=3vjIGllfGEM"><i class="fab fa-youtube" style="font-size: 24px; margin-right: 10px;color: red;"></i></a>
+          </div>
+          <div class="col-6 login_link">
+            <ul class="header_link right m-auto">
+              <li>
+                <a href="tel:0902077103" style="display: flex; align-items: center;">
+                  <i class="fas fa-phone-alt mr-2"></i>
+                  <span style="font-weight: 500;">0902.077.103</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-main clearfix">
+        <div class="row">
+          <div class="col-lg-3 col-100-h">
+            <div id="trigger-mobile" class="visible-sm visible-xs"><i class="fas fa-bars"></i></div>
+            <div class="logo">
+              <a href="./index.html" class="logo-link">
+                <img src="./assets/img/logo/logo.png" alt="">
+              </a>
+            </div>
+          </div>
+            <!-- Thêm phần icon giao hàng và hỗ trợ khách hàng bên phải logo -->
+            <div class="col-lg-9 d-flex align-items-center justify-content-end" style="gap: 40px;">
+              <div class="d-flex align-items-center" style="gap: 10px;">
+                <i class="fas fa-shipping-fast" style="font-size: 24px; color: #007bff;"></i>
+                <span style="font-weight: 500;">FreeShip khu vực Đà Nẵng, Quảng Nam</span>
+              </div>
+              <div class="d-flex align-items-center" style="gap: 10px;">
+                <i class="fas fa-headset" style="font-size: 24px; color: #28a745;"></i>
+                <a href="./contact.html" style="font-weight: 500; color: inherit; text-decoration: none;">Hỗ trợ khách hàng</a>
+              </div>
+            </div>
+            <!-- Kết thúc phần thêm -->
+        </div>
+      </div>
+    </div>
+    <nav class="header_nav hidden-sm hidden-xs">
+      <div class="container">
+        <ul class="header_nav-list nav">
+          <li class="header_nav-list-item "><a href="./index.html">Trang chủ</a></li>
+          <li class="header_nav-list-item"><a href="./intro.html">Giới thiệu</a></li>
+          <li class="header_nav-list-item"><a href="./news.html">Tin tức</a></li>
+          <li class="header_nav-list-item"><a href="./contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- end header -->
+  <!-- content -->
+  <div class="container">
+    <!-- slide show -->
+    <div class="row">
+      <section class="awe-section-1">
+        <div class="mt-4 top-sliders col-md-12">
+          <div class="slideshow">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+              <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+              </ul>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./assets/img/slideshow/1.jpg" class="d-block w-100" style="height:auto;max-height:500px;object-fit:cover;">
+                </div>
+                <div class="carousel-item">
+                  <img src="./assets/img/slideshow/3.jpg" class="d-block w-100" style="height:auto;max-height:500px;object-fit:cover;">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </a>
+              <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- end slide show -->
+    <div class="product">
+      <div class="container">
+        <div class="product__new">
+          <h3 class="product__ne title-product">Danh mục sản phẩm</h3>
+
+      <div class="row" style="display: flex; flex-wrap: wrap;">
+        <!-- Sản phẩm 1 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-20" style="display: flex;">
+          <a href="./Maxio-bich.html" class="product__new-item" style="width: 100%;">
+            <div class="card" style="width: 100%; display: flex; flex-direction: column; height: 100%;">
+              <div>
+                <img class="card-img-top" src="./assets/img/product/mabich.jpg" alt="Card image cap"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+              </div>
+              <div class="card-body" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <h5 class="card-title description">
+                  Cà phê Huy Tùng - Maxio loại bịch
+                </h5>
+                <div class="product__price">
+                  <p class="card-text price-color product__price-new">Giá: 135,000đ</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Sản phẩm 2 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-20" style="display: flex;">
+          <a href="./Robusta-bich.html" class="product__new-item" style="width: 100%;">
+            <div class="card" style="width: 100%; display: flex; flex-direction: column; height: 100%;">
+              <div>
+                <img class="card-img-top" src="./assets/img/product/robich.jpg" alt="Card image cap"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+              </div>
+              <div class="card-body" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <h5 class="card-title description">
+                  Cà phê Huy Tùng - Robusta bịch
+                </h5>
+                <div class="product__price">
+                  <p class="card-text price-color product__price-new">Giá: 148,000đ</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Sản phẩm 3 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-20" style="display: flex;">
+          <a href="./Robusta-moc.html" class="product__new-item" style="width: 100%;">
+            <div class="card" style="width: 100%; display: flex; flex-direction: column; height: 100%;">
+              <div>
+                <img class="card-img-top" src="./assets/img/product/romoc.jpg" alt="Card image cap"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+              </div>
+              <div class="card-body" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <h5 class="card-title description">
+                  Cà phê Huy Tùng hạt Robusta mộc
+                </h5>
+                <div class="product__price">
+                  <p class="card-text price-color product__price-new">Giá: 245,000đ</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Sản phẩm 4 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-20" style="display: flex;">
+          <a href="./HuongchonHop.html" class="product__new-item" style="width: 100%;">
+            <div class="card" style="width: 100%; display: flex; flex-direction: column; height: 100%;">
+              <div>
+                <img class="card-img-top" src="./assets/img/product/hop-1.jpg" alt="Card image cap"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+              </div>
+              <div class="card-body" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <h5 class="card-title description">
+                  Cà phê Huy Tùng - Hương chồn loại hộp
+                </h5>
+                <div class="product__price">
+                  <p class="card-text price-color product__price-new">Giá: 295,000đ</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Sản phẩm 5 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-20" style="display: flex;">
+          <a href="./Robusta-hat.html" class="product__new-item" style="width: 100%;">
+            <div class="card" style="width: 100%; display: flex; flex-direction: column; height: 100%;">
+              <div>
+                <img class="card-img-top" src="./assets/img/product/Ro-hat.jpg" alt="Card image cap"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+              </div>
+              <div class="card-body" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <h5 class="card-title description">
+                  Cà phê Huy Tùng - Robusta dạng hạt
+                </h5>
+                <div class="product__price">
+                  <p class="card-text price-color product__price-new">Giá: 245,000đ</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Sản phẩm 6 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-20" style="display: flex;">
+          <a href="./Culi.html" class="product__new-item" style="width: 100%;">
+            <div class="card" style="width: 100%; display: flex; flex-direction: column; height: 100%;">
+              <div>
+                <img class="card-img-top" src="./assets/img/product/culi.jpg" alt="Card image cap"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+              </div>
+              <div class="card-body" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <h5 class="card-title description">
+                  Cafe Huy Tùng hạt Culi
+                </h5>
+                <div class="product__price">
+                  <p class="card-text price-color product__price-new">Giá: 248,000đ</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Sản phẩm 7 -->
+        <div class="col-lg-3 col-md-6 col-sm-12 mb-20" style="display: flex;">
+          <a href="./Huongchon.html" class="product__new-item" style="width: 100%;">
+            <div class="card" style="width: 100%; display: flex; flex-direction: column; height: 100%;">
+              <div>
+                <img class="card-img-top" src="./assets/img/product/HC bich.jpg" alt="Card image cap"
+                    style="width: 100%; height: 250px; object-fit: cover; border-radius: 8px;">
+              </div>
+              <div class="card-body" style="flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                <h5 class="card-title description">
+                  Cà phê Huy Tùng - Hương chồn loại bịch
+                </h5>
+                <div class="product__price">
+                  <p class="card-text price-color product__price-new">Giá: 165,000đ</p>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+
+        </div>
+        <section class="awe-section-9">
+          <div class="section_policy clearfix">
+            <div class="col-12">
+              <div class="owl-policy-mobile">
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <div class="owl-item">
+                      <div class="section_policy_content">
+                      
+                          <img src="https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/policy_images_1.png?1628514159582" alt="">
+                          <div class="section-policy-padding">
+                            <h3>Miễn phí vận chuyển</h3>
+                            <div class="section_policy_title">Cho các đơn hàng thuộc Đà Nẵng, Quảng Nam</div>
+                          </div>
+                      
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="section_policy_content">
+                       
+                          <img src="https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/policy_images_2.png?1628514159582" alt="">
+                          <div class="section-policy-padding">
+                            <h3>Hỗ trợ 24/7</h3>
+                            <div class="section_policy_title">Liên hệ hỗ trợ 24h/ngày</div>
+                          </div>
+                      
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="section_policy_content">
+                       
+                          <img src="	https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/policy_images_3.png?1628514159582" alt="">
+                          <div class="section-policy-padding">
+                            <h3>Hoàn tiền 100%</h3>
+                            <div class="section_policy_title">Nếu sản phẩm bị lỗi, hư hỏng</div>
+                          </div>
+                        
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="section_policy_content">
+                      
+                          <img src="https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/policy_images_4.png?1628514159582" alt="">
+                          <div class="section-policy-padding">
+                            <h3>Thanh toán</h3>
+                            <div class="section_policy_title">Được bảo mật 100%</div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <div class="shoesnews">
+      <div class="container">
+        <h3 class="shoesnews__title">Câu chuyện Cà phê Huy Tùng</h3>
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-20">
+            <a href="./new1.html" class="product__new-item">
+              <div class="card" style="width: 100%">
+                <img class="card-img-top" src="./assets/img/product/tintuc1.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title description title-news">
+                    Lợi ích bất ngờ khi uống cà phê vào buổi sáng
+                  </h5>
+                  <p class="card-text description" style="font-weight: 400;">Vào buổi sáng nhiều người có thói quen lựa chọn trà hoặc cà phê để uống. Dù điều này đơn giản là sở thích của một số người, nhưng việc chọn cà phê làm thức uống đầu tiên trong ngày lại đem tới nhiều lợi ích bất ngờ. </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-20">
+            <a href="./new2.html" class="product__new-item">
+              <div class="card" style="width: 100%">
+                <img class="card-img-top" src="./assets/img/product/tintuc2.jpg" alt="Card image cap" height="230px">
+                <div class="card-body">
+                  <h5 class="card-title description title-news">
+                    Phú Yên có 2 sản phẩm công nghiệp nông thôn tiêu biểu cấp quốc gia 2017
+                  </h5>
+                  <p class="card-text description" style="font-weight: 400;">Theo Sở Công thương, tại cuộc bình chọn sản phẩm công nghiệp nông thôn tiêu biểu cấp quốc gia 2017, Phú Yên có 2 sản phẩm được vinh danh. Đó là phân bón NPK 22-12-8+TE của Công ty TNHH Sản xuất và thương mại Hoàng Long Vina và phân khoáng NPK hữu cơ Thiên Ân 20-5-6+9,5% HC của Công ty CP Công nghệ Sinh học Thiên Ân (huyện Đông Hòa)..</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-20">
+            <a href="./new3.html" class="product__new-item">
+              <div class="card" style="width: 100%">
+                <img class="card-img-top" src="./assets/img/product/tintuc.png" alt="Card image cap" height="230px" >
+                <div class="card-body">
+                  <h5 class="card-title description title-news">
+                    Về Phú Yên với cà phê Tùng
+                  </h5>
+                  <p class="card-text description" style="font-weight: 400;">Dân miền Trung ăn uống thứ gì cũng đậm hương, đậm vị. Với đất Tuy Hòa - Phú Yên, một trong những thức mà dân giang hồ sành điệu đánh giá “ngon nhất nước”- ấy chính là cà phê. </p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <img src="./assets/img/logo/image.png" alt="" width="100px" height="100px"
+            style="border-radius: 50%;border: 3px solid #000;margin-bottom: 20px;">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <p><i class="fas fa-search-location footer__item-icon"></i>133 Phan Đăng Lưu - Hoà Cường Nam - Đà Nẵng</p>
+            </li>
+            <li class="footer__item">
+              <p><i class="fas fa-phone-square-alt footer__item-icon"></i> Phone: <a
+                  href="tel:0902077103">0902.077.103</a></p>
+            </li>
+            <li class="footer__item">
+              <p><i class="fas fa-envelope-square footer__item-icon"></i> Email: <a
+                  href="cafehuytung.com@gmail.com">cafehuytung.com@gmail.com</a></p>
+            </li>
+            <li>
+            <a href="https://www.facebook.com/profile.php?id=100083166708720"><i class="fab fa-facebook" style="font-size: 24px; margin-right: 10px"></i></a>
+            <a href="https://www.youtube.com/watch?v=3vjIGllfGEM"><i class="fab fa-youtube" style="font-size: 24px; margin-right: 10px;color: red;"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-9 d-flex flex-wrap align-items-start justify-content-between">
+          <div style="min-width:220px;max-width:350px;flex:1;">
+            <div style="display: flex;justify-content:space-between;cursor: pointer;margin-bottom: 8px;"
+              data-toggle="collapse" data-target="#demo1">
+              <h3 class="footer__heading">Hỗ trợ khách hàng</h3><i class="fas fa-chevron-down checkdl2"></i>
+            </div>
+            <ul class="footer__list collapse show" id="demo1">
+              <li class="footer__item">
+                <a href="./contact.html" class="footer__item--link">Liên hệ</a>
+              </li>
+              <li class="footer__item">
+                <a href="./news.html" class="footer__item--link">Tin tức</a>
+              </li>
+              <li class="footer__item">
+                <a href="./Product.html" class="footer__item--link">Sản phẩm</a>
+              </li>
+            </ul>
+          </div>
+          <div style="max-width: 400px; width: 100%; flex:1; margin-left: 32px;">
+            <h3 class="footer__heading" style="font-size: 15px; margin-bottom: 12px;">Video giới thiệu</h3>
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+              <iframe src="https://www.youtube.com/embed/3vjIGllfGEM" frameborder="0" allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__text">© Bản quyền thuộc về Coffee Huy Tùng - Chi nhánh Đà Nẵng</p>
+    </div>
+  </footer>
+  <div id="go-to-top">
+    <a class="btn-gototop"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- end footer -->
+  <!-- modal -->
+    <!-- Nút gọi điện thoại cố định góc phải dưới cùng -->
+<div id="phone-fixed" style="position: fixed; right: 24px; bottom: 24px; z-index: 9999; display: flex; flex-direction: column; align-items: center;">
+  <!-- Nút điện thoại -->
+  <a id="phone-btn" href="tel:0901438211"
+     class="phone-animate"
+     style="display: flex; align-items: center; justify-content: center; width: 70px; height: 70px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.18); position: relative; border: 4px solid #e0ffe0;">
+    <span style="display: flex; align-items: center; justify-content: center; width: 54px; height: 54px; background: transparent; border-radius: 50%;">
+      <i class="fas fa-phone-alt" style="color: #fff; font-size: 2rem;"></i>
+    </span>
+  </a>
+  <!-- Nút Facebook, ẩn mặc định -->
+  <a id="fb-btn" href="https://www.facebook.com/profile.php?id=100083166708720"
+     class="fb-animate"
+     style="display: none; align-items: center; justify-content: center; width: 70px; height: 70px; border-radius: 50%; box-shadow: 0 2px 8px rgba(0,0,0,0.18); position: relative; border: 4px solid #e0ffe0;">
+    <span style="display: flex; align-items: center; justify-content: center; width: 54px; height: 54px; background: transparent; border-radius: 50%;">
+      <i class="fab fa-facebook-messenger" style="color: #fff; font-size: 2rem;"></i>
+    </span>
+  </a>
+  <div style="margin-top: 8px;">
+    <span style="background: #d7263d; color: #fff; font-size: 1.25rem; font-weight: 600; padding: 4px 16px; border-radius: 6px; display: inline-block; letter-spacing: 1px;">
+      0902.077.103
+    </span>
+  </div>
+</div>
+<script>
+  // Tự động chuyển đổi icon mỗi 4 giây
+  setInterval(function() {
+    var phoneBtn = document.getElementById('phone-btn');
+    var fbBtn = document.getElementById('fb-btn');
+    if (phoneBtn.style.display !== 'none') {
+      phoneBtn.style.display = 'none';
+      fbBtn.style.display = 'flex';
+    } else {
+      phoneBtn.style.display = 'flex';
+      fbBtn.style.display = 'none';
+    }
+  }, 3000);
+</script>
+<style>
+  @keyframes phone-ring {
+    0% {
+      box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7), 0 0 0 10px rgba(46, 204, 113, 0.2), 0 0 0 20px rgba(46, 204, 113, 0.1);
+    }
+    80% {
+      box-shadow: 0 0 0 20px rgba(46, 204, 113, 0), 0 0 0 40px rgba(46, 204, 113, 0), 0 0 0 60px rgba(46, 204, 113, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(46, 204, 113, 0), 0 0 0 0 rgba(46, 204, 113, 0), 0 0 0 0 rgba(46, 204, 113, 0);
+    }
+  }
+  .phone-animate {
+    animation: phone-ring 1.2s infinite;
+    transition: background 0.3s;
+    background: linear-gradient(135deg, #6ee96e 60%, #28a745 100%);
+  }
+  .phone-animate:hover {
+    background: linear-gradient(135deg, #28a745 60%, #6ee96e 100%);
+  }
+  .fb-animate {
+    animation: phone-ring 1.2s infinite;
+    transition: background 0.3s;
+    background: linear-gradient(135deg, #1877f2 60%, #42a5f5 100%);
+  }
+  .fb-animate:hover {
+    background: linear-gradient(135deg, #42a5f5 60%, #1877f2 100%);
+  }
+</style>
+</body>
+<script src="./assets/js/main.js"></script>
+
+</html>

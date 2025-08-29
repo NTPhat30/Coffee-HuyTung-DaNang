@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUY TÙNG COFFEE - ĐẶC SẢN PHÚ YÊN</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- link font chữ -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap">
+  <!-- link icon -->
+  <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- link css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <link rel="stylesheet" href="./assets/css/productdetail.css">
+  <link rel="stylesheet" href="./assets/css/reponsive1.css">
+  <link rel="icon" href="./assets/img/logo/image.png" type="image/x-icon" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+</head>
+<style>
+  form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+
+  form.example button:hover {
+    background: #0b7dda;
+  }
+
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+          /* Mobile & tablet  */
+@media (max-width: 1023px) {
+}
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .owl-item {
+    width: 396px;
+    padding: 16px 0;
+  }
+}
+/* mobile */
+@media (max-width: 739px) {
+  .owl-item {
+    float: unset;
+    padding: 16px 0;
+  }
+} 
+</style>
+
+<body style="background-color: rgb(248, 242, 236);">
+  <div class="overlay hidden"></div>
+  <!-- mobile menu -->
+  <div class="mobile-main-menu">
+    <div class="drawer-header">
+      <a href="">
+        <div class="drawer-header--auth">
+        </div>
+      </a>
+    </div>
+    </ul>
+    <div class="la-scroll-fix-infor-user">
+      <div class="la-nav-menu-items">
+        <div class="la-title-nav-items">
+          <strong>Danh mục</strong>
+        </div>
+        <ul class="la-nav-list-items">
+          <li class="ng-scope">
+            <a href="./index.html">Trang chủ</a>
+          </li>
+          <li class="ng-scope">
+            <a href="./intro.html">Giới thiệu</a>
+          </li>
+          <li class="ng-scope">
+            <a href="./news.html">Tin tức</a>
+          </li>
+          <li class="ng-scope">
+            <a href="./contact.html">Liên hệ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <ul class="mobile-support">
+      <li>
+        <div class="drawer-text-support">Hỗ trợ</div>
+      </li>
+      <li>
+        <i class="fas fa-phone-square-alt footer__item-icon">HOTLINE: </i>
+        <a href="tel:0902077103">0902.077.103</a>
+      </li>
+      <li>
+        <i class="fas fa-envelope-square footer__item-icon">Email: </i>
+        <a href="mailto:support@sapo.vn">cafehuytung.com@gmail.com</a>
+      </li>
+    </ul>
+  </div>
+  <!-- end mobile menu -->
+  <!-- header -->
+  <header class="header">
+    <div class="container">
+      <div class="top-link clearfix hidden-sm hidden-xs">
+        <div class="row">
+          <div class="col-6 social_link">
+            <div class="social-title">Theo dõi: </div>
+            <a href="https://www.facebook.com/profile.php?id=100083166708720"><i class="fab fa-facebook" style="font-size: 24px; margin-right: 10px"></i></a>
+            <a href="https://www.youtube.com/watch?v=3vjIGllfGEM"><i class="fab fa-youtube" style="font-size: 24px; margin-right: 10px;color: red;"></i></a>
+          </div>
+          <div class="col-6 login_link">
+            <ul class="header_link right m-auto">
+              <li>
+                <a href="tel:0902077103" style="display: flex; align-items: center;">
+                  <i class="fas fa-phone-alt mr-2"></i>
+                  <span style="font-weight: 500;">0902.077.103</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-main clearfix">
+        <div class="row">
+          <div class="col-lg-3 col-100-h">
+            <div id="trigger-mobile" class="visible-sm visible-xs"><i class="fas fa-bars"></i></div>
+            <div class="logo">
+              <a href="./index.html" class="logo-link">
+                <img src="./assets/img/logo/logo.png" alt="">
+              </a>
+            </div>
+          </div>
+            <!-- Thêm phần icon giao hàng và hỗ trợ khách hàng bên phải logo -->
+            <div class="col-lg-9 d-flex align-items-center justify-content-end" style="gap: 40px;">
+              <div class="d-flex align-items-center" style="gap: 10px;">
+                <i class="fas fa-shipping-fast" style="font-size: 24px; color: #007bff;"></i>
+                <span style="font-weight: 500;">FreeShip khu vực Đà Nẵng, Quảng Nam</span>
+              </div>
+              <div class="d-flex align-items-center" style="gap: 10px;">
+                <i class="fas fa-headset" style="font-size: 24px; color: #28a745;"></i>
+                <a href="./contact.html" style="font-weight: 500; color: inherit; text-decoration: none;">Hỗ trợ khách hàng</a>
+              </div>
+            </div>
+            <!-- Kết thúc phần thêm -->
+        </div>
+      </div>
+    </div>
+    <nav class="header_nav hidden-sm hidden-xs">
+      <div class="container">
+        <ul class="header_nav-list nav">
+          <li class="header_nav-list-item "><a href="./index.html">Trang chủ</a></li>
+          <li class="header_nav-list-item"><a href="./intro.html">Giới thiệu</a></li>
+          <li class="header_nav-list-item"><a href="./news.html">Tin tức</a></li>
+          <li class="header_nav-list-item"><a href="./contact.html">Liên hệ</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- end header -->
+    <div class="content" style="margin-top: 30px">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="page-title">
+                    <h1 class="title-head" style="font-size: 2.2rem; color: #bb0e0eff; font-weight: 700; text-align: center;">
+                       <strong> Về Phú Yên với cà phê Tùng</strong>
+                    </h1>
+                </div>
+                <div class="content-page" style="font-size: 1.5rem; line-height: 1.2; color: #222;">
+                  <h3 style="font-size: 1.7rem; font-weight: 600;">Dân miền Trung ăn uống thứ gì cũng đậm hương, đậm vị. Với đất Tuy Hòa - Phú Yên, một trong những thức mà dân giang hồ sành điệu đánh giá “ngon nhất nước”- ấy chính là cà phê.</h3>
+                   <br>
+                   <p>Đây không phải là đất trồng nhiều cà phê như Đắc Lắc, Lâm Đồng nhưng công thức rang tẩm, chế biến thì “độc nhất vô nhị” với bí quyết trộn nước mắm nhĩ vào cà phê. Một trong những người tiêu biểu trong nghề chế biến cà phê là ông Trương Văn Tiến với một hệ thống nhà hàng cà phê liêu xiêu lòng khách thập phương…</p>
+                   <h3>Từ ăn ngủ bên chảo cà phê</h3>
+                   <p>Giữa năm 2002, nghe tin ông Tiến “râu” mở một trà thất loại sang tại thị xã Tuy Hòa (vốn đầu tư đến 4 tỷ đồng), nhiều người lắc đầu: “Đúng là thừa tiền, trà lá gì mà bỏ cả tiền tỷ…”. Mà thật, xứ nông nghiệp Phú Yên quê tôi, ít ai chơi “ngông” như vậy. Ông cứ lặng lẽ làm, thức khuya dậy sớm cùng cái công trình “dối già” của mình tại 69 Tản Đà. Vốn là dân trồng cà phê ở Gia Lai, rồi được biết nhiều bằng sản phẩm “Cà phê Tùng” (đã đăng ký thương hiệu), gia đình ông lại tiếp tục bán cà phê bột tinh chế tại nhà riêng trên đường Nguyễn Trãi, rồi Hùng Vương, đặc biệt là Trà Thất dưới chân Nhạn Tháp này. Ông sống chết bằng cà phê, làm cà phê từ A đến Z bằng một tình yêu máu thịt; chẳng phải ông thừa tiền gì đâu, tôi vẫn thấy ông đi trả lãi ngân hàng đều đều.</p>
+                   <p>Dân ghiền cà phê chính tông sỡ dĩ công nhận cà phê Tuy Hòa thuộc loại “của ngon vật lạ” (cà phê Tùng là một đại biểu), bởi bởi độ keo tuyền và hương vị vang lừng như biết hát ca, không lẫn vào đâu được. Cả một đời lăn lộn thăng trầm cùng cà phê, ông Tiến có thể ngửi ngang ly cà phê là biết nó được chế biến như thế nào, phụ gia ra sao. Ông kể: “Tôi không thể nhớ hết bao nhiêu đêm nhễ nhại mồ hôi bên chảo rang cà phê, vừa truy lùng sách vở chuyên đề, vừa nghĩ cách làm sao để tạo được một hương vị độc đáo riêng cho cà phê mình làm ra. Phải tự tay chọn, rang, phải cảm nhận cho được độ “tới” của cà phê bằng cả khứu giác, thị giác và cả con tim mình thì mới hòa quyện được cái hồn mình trong cốc cà phê. Không mê làm sao thành, chú!”.</p>
+                   <h3>Đến “quán cho ra quán”</h3> 
+                   <p>
+                      Là một người kinh doanh có phong cách nghệ sĩ, ông Tiến đã làm việc gì là làm “tới đọt”. Cũng như ông đã từng nổi tiếng nhà một nghệ nhân trồng, sưu tập và chơi cây cảnh thuộc loại tầm cỡ, ý thích mở nhà hàng trà - cà phê của ông cũng vậy. Thấm thoát, khu trà thất đã thành hình tựa lưng duyên dáng vào núi Nhạn giữa lòng phố thị Tuy Hòa. Trong suy nghĩ của nhiều người, xây quán tốn kém, sang trọng như vậy thì giá cả thức uống phải cao, phải là “giá sài Gòn” thì chủ nhân mới mau thu hồi vốn; dân kinh doanh có bao giờ “làm chơi”,… Tuy nhiên, nhờ “nhập tận gốc, làm tận tay” nên giá cà phê của ông vẫn chỉ 3-4 ngàn đồng/ly. Thế là khách bình dân yên tâm ra vào tấp nập.
+                    <p>
+                        Ngoài món cà phê truyền thống, tại 69 Tản Đà còn là một trong những không gian trà thất đậm chất phương Đông, lần đầu có mặt ở Tuy Hòa. Ở đây có hơn 20 loại trà do một người bạn Việt kiều truyền lại cho vợ chồng ông Tiến cách pha chế. Từ 6-15 ngàn đồng/tách, kèm theo phích nước châm và ít đường phèn, mứt gừng; thế là có thể “vô tư đi em” hàn huyên thư giãn trong một không gian cỏ cây gợi cảm.
+                      </p>
+                      <p>Giá cả phải chăng và phong cách phục vụ lịch thiệp, tận tình đã tạo cho trà thất này thành một điểm hẹn lý thú cho nhiều giới. Từ khách du lịch bằng máy bay, quan đầu tỉnh đi tiếp khách đến công chức, học sinh sinh viên, thợ thuyền giờ rỗi rãi; mỗi người một “gu” chọn thức uống, góc ngồi riêng. 4 tầng nhà cùng nhiều khoảng sân thoáng đãng, phải đến vài trăm chỗ ngồi nhưng cách bố trí, tạo dáng khéo léo cùng hệ thống cây cảnh đắc địa, làm cho “ẩm khách” không cảm thấy quá đông đúc mà vẫn gần gũi, riêng tư cần thiết. Thế là nơi đây đã thành một địa chỉ trong tâm thức khách sành điệu. “Đi cà phê Tùng!” giờ không chỉ là chuyện giải khát mà còn là đi tìm một chút niềm thư thái với không gian nhà đẹp, đất trời quyến rũ.
+                      </p>
+                      <p>Bây giờ thì nhiều người trầm trồ: “Đắt khách như thế thì đâu còn là chuyện ngồi thu tiền lẻ… Cha này tài thật!”. Ông Tiến giờ vẫn ngày ngày chào đón khách và chăm chút cho cơ ngơi của mình giữa Tuy Hòa đang sắp lên thành phố. Thủy chung với cà phê và đam mê tạo dựng quán đẹp, cuộc đời đã đền đáp cho ông, con cái đều đã thành đạt, ông đang tích cực truyền nghề cho cậu con trai. Ngoài các nhà hàng giải khát ở Tuy Hòa, Gia Lai, ông Tiến còn đang tính chuyện đưa thương hiệu cà phê cùng niềm đam mê mở quán “tiến về Sài Gòn”…
+                      </p>
+                    </div>
+            </div>
+        </div>
+    </div>
+<!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <img src="./assets/img/logo/image.png" alt="" width="100px" height="100px"
+            style="border-radius: 50%;border: 3px solid #000;margin-bottom: 20px;">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <p><i class="fas fa-search-location footer__item-icon"></i>133 Phan Đăng Lưu - Hoà Cường Nam - Đà Nẵng</p>
+            </li>
+            <li class="footer__item">
+              <p><i class="fas fa-phone-square-alt footer__item-icon"></i> Phone: <a
+                  href="tel:0902077103">0902.077.103</a></p>
+            </li>
+            <li class="footer__item">
+              <p><i class="fas fa-envelope-square footer__item-icon"></i> Email: <a
+                  href="cafehuytung.com@gmail.com">cafehuytung.com@gmail.com</a></p>
+            </li>
+            <li>
+            <a href="https://www.facebook.com/profile.php?id=100083166708720"><i class="fab fa-facebook" style="font-size: 24px; margin-right: 10px"></i></a>
+            <a href="https://www.youtube.com/watch?v=3vjIGllfGEM"><i class="fab fa-youtube" style="font-size: 24px; margin-right: 10px;color: red;"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-9 d-flex flex-wrap align-items-start justify-content-between">
+          <div style="min-width:220px;max-width:350px;flex:1;">
+            <div style="display: flex;justify-content:space-between;cursor: pointer;margin-bottom: 8px;"
+              data-toggle="collapse" data-target="#demo1">
+              <h3 class="footer__heading">Hỗ trợ khách hàng</h3><i class="fas fa-chevron-down checkdl2"></i>
+            </div>
+            <ul class="footer__list collapse show" id="demo1">
+              <li class="footer__item">
+                <a href="./contact.html" class="footer__item--link">Liên hệ</a>
+              </li>
+              <li class="footer__item">
+                <a href="./news.html" class="footer__item--link">Tin tức</a>
+              </li>
+              <li class="footer__item">
+                <a href="./Product.html" class="footer__item--link">Sản phẩm</a>
+              </li>
+            </ul>
+          </div>
+          <div style="max-width: 400px; width: 100%; flex:1; margin-left: 32px;">
+            <h3 class="footer__heading" style="font-size: 15px; margin-bottom: 12px;">Video giới thiệu</h3>
+            <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+              <iframe src="https://www.youtube.com/embed/3vjIGllfGEM" frameborder="0" allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__text">© Bản quyền thuộc về Coffee Huy Tùng - Chi nhánh Đà Nẵng</p>
+    </div>
+  </footer>
+  <div id="go-to-top">
+    <a class="btn-gototop"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- end footer -->
+</body>
+<script src="./assets/js/main.js"></script>
+</html>
